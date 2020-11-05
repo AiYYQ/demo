@@ -4,6 +4,6 @@ spring:
     port: 6379
   session:
     store-type: redis
-    timeout: 15
+    timeout: 15  #小于60 默认会设置成一分钟if (sessionTimeout > 0) {sessionTimeout = Math.max(TimeUnit.SECONDS.toMinutes(sessionTimeout)，1L);}
 server:
   port: 9999
