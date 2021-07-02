@@ -30,4 +30,7 @@ public class TestController {
     public void abc(){
 
     }
+
+    @GetMapping("/aaa")
+    public void aaa(){}
 }
